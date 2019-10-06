@@ -1,0 +1,46 @@
+Dim str1 as string
+Dim str2 as string
+Dim newstr as string
+Dim A as integer
+Dim B as unteger
+Dim pangram as boolean
+
+
+str1 = ""
+str2 = ""
+newstr = ""
+A = 0
+B = 0
+pangram = False
+
+
+Output(" Enter String")
+Input Str1
+Str2 = Uppercase(str1)
+
+If LEN(str2) <26 THEN
+Output("The string was not pangram... Press any key to quit")
+Input
+ENDIF
+
+FOR A = 65 to 90
+pangram = FALSE
+FOR B = 1 to LEN(str2)
+    newstr = ASC(mid(str2, B , 1))
+    IF newstr <> A THEN
+    pangram = FALSE
+    ELSEIF newstr = A THEN
+    pangram = TRUE
+    End FOR
+    ENDIF
+    NEXT B
+    NEXT A
+
+    IF pangram = TRUE THEN
+    output(" The string was pangram")
+    input
+    ELSEIF pangram = FALSE THEN
+    output(" The string was not pangram")
+    input
+    ENDIF
+    
