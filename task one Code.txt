@@ -1,0 +1,42 @@
+Dim str1 as string
+Dim str2 as string
+Dim str3 as string
+Dim str4 as string
+Dim newstr1 as string
+Dim newstr2 as string
+Dim finalstr as string
+
+str1 = ""
+str2 = ""
+str3 = ""
+str4 = ""
+newstr1 =""
+newstr2 = ""
+finalstr = ""
+
+'for first string/name
+
+Output(" Enter NAme")
+Output(" Enter FIRST NAME: ")
+Input str1
+Output(" Enter LAST NAMe: ")
+Input str2
+
+'for 2nd string/name
+
+Output(" Enter Second name")
+Output (" Enter FIRST NAME: ")
+Input str3
+Output(" Enter LAST NAME: ")
+Input str4 
+
+'now processing/working
+
+newstr1 = str1
+newstr2 = str4
+finalstr = newstr1 & " " & newstr2
+
+Output(" The new name is : " & finalstr")
+Output(" Task One completed , Press any key to quit")
+Input
+
