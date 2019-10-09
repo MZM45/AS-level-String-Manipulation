@@ -11,9 +11,8 @@
         Dim spacecounter As Integer
         Dim myspace As Char
         Dim limit As Boolean
-        Dim onespace As Boolean
-
-        onespace = False
+        
+    
         limit = False
         counter = 0
         space = " "
