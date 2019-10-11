@@ -34,7 +34,7 @@
         
         If spacecounter > 2 Then
             limit = False
-        ElseIf spacecounter <= 2 Then
+        ElseIf spacecounter <= 1 Then
             limit = True
         End If
         a = InStr(str1, " ")
